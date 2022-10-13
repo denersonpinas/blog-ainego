@@ -7,3 +7,6 @@
         <?php wp_head() ?>
     </head>
     <body>
+        <ul>
+            <li>Menu aqui</li>
+        </ul>
