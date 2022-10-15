@@ -1,0 +1,84 @@
+:root {
+    --verde: #27764D;
+    --vermelho-escuro: #3E100A;
+    --vermelho-sangue: #AC290B;
+    --laranja: #C85809;
+    --amarelo: #D88208;
+    --amarelo-claro: #D5B98A;
+    --verde-info: #0E8C43;
+    --vermelho-info: #E52E2E;
+    --preto: #030303;
+    --cinza-escuro: #212121;
+    --branco: #F4F4F4;
+
+    /* 14px */
+    --button: 0.875rem;
+    /* 16px */
+    --sub-title: 1rem;
+    /* 20px */
+    --body2: 1.25rem;
+    /* 24px */
+    --body1: 1.5rem;
+    /* 28px */
+    --h6: 1.75rem;
+    /* 32px */
+    --h5: 2rem;
+    /* 36px */
+    --h4: 2.25rem;
+    /* 40px */
+    --h3: 2.5rem;
+    /* 48px */
+    --h2: 3rem;
+    /* 56px */
+    --h1: 3.5rem;
+}
+
+@font-face {
+    src: url('../font/Merriweather-Regular.ttf');
+    font-family: Merriweather;
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+    src: url('../font/WorkSans-VariableFont_wght.ttf');
+    font-family: WorkSans;
+    font-weight: normal;
+    font-display: swap;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+}

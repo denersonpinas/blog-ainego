@@ -1,16 +1,14 @@
 <?php
 
 function ainego_scripts() {
-    $directory = get_template_directory_uri()."\/css\/";
+    $directory = get_template_directory_uri()."\/assets\/css\/";
     // $directory_dev = get_template_directory_uri()."\/css-dev\/";
 
-    wp_enqueue_style( 'header2-css', $directory . 'header.css');
+    wp_enqueue_style( 'header-css', $directory . 'header.css');
     wp_enqueue_style( 'footer-css', $directory . 'footer.css');
 
-    if(is_front_page()){
-        
-    } else if(is_404()) {       
-    } else if(is_page_template('template-parts/home.php')){
+    if(is_page_template('template-parts/home.php')){
+        wp_enqueue_style( 'vars-css', $directory . 'vars.css');
         wp_enqueue_style( 'home-css', $directory . 'home.css');
     }
 }
