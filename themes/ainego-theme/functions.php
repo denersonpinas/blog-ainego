@@ -2,6 +2,8 @@
 
 function ainego_setup() { 
 	add_theme_support( 'post-thumbnails' );
+
+    
 	add_theme_support('amp', array(	'comments_live_list' => true));
 	add_theme_support('html5',array('search-form'));
 	add_theme_support( 'title-tag' );
@@ -17,5 +19,3 @@ add_action( 'after_setup_theme', 'ainego_setup' );
 
 
 require get_template_directory() . '/inc/setup.php';
-
-?>
