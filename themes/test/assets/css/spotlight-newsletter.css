@@ -1,0 +1,227 @@
+.spotlight-newsletter {
+    background-color: #820AD1;
+    padding: 47px 24px 48px;
+    margin-bottom: 0;
+}
+
+.spotlight-newsletter .spotlight-newsletter-title {
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    font-feature-settings: 'tnum' on, 'lnum' on, 'ss05' on;
+    color: #F5F5F5;
+    font-weight: 600;
+    margin: 0 124px 66px 0;
+}
+
+.spotlight-newsletter #spotlight-widget-newsletter .field-wrapper p {
+    font-size: 10px;
+    line-height: 125%;
+    letter-spacing: -0.01em;
+    font-feature-settings: 'tnum' on, 'lnum' on, 'ss05' on;
+    color: #F5F5F5;
+    margin-top: 14px;
+}
+
+.spotlight-newsletter #spotlight-widget-newsletter .field-wrapper p a{
+    color: #f5f5f5;
+    cursor: pointer;
+}
+
+.spotlight-newsletter #spotlight-widget-newsletter .field-wrapper{
+    flex: initial;
+}
+
+.spotlight-widget-newsletter p{
+    color: #f5f5f5;
+    font-weight: 600;
+    font-size: 28px;
+    margin: 0 70px 32px 0;
+}
+
+.spotlight-widget-newsletter form{
+    padding: 24px;
+    display: block;
+    border-radius: 16px;
+    background-color: #fff;
+}
+
+.spotlight-widget-newsletter form p{
+    color: #111;
+    font-size: 24px;
+    margin: 0 0 50px;
+}
+
+.spotlight-widget-newsletter #spotlight-widget-newsletter .field-wrapper{
+    position: relative;
+}
+
+.spotlight-newsletter #spotlight-widget-newsletter .field-wrapper input{
+    width: 98%;
+    border: none;
+    border-bottom: 2px solid #d8dae0;
+    background-color: #820AD1;
+    outline: none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #D57DFF;
+}
+
+.spotlight-newsletter #spotlight-widget-newsletter .field-wrapper .label-text {
+    color: #F5F5F5;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    line-height: 120%;
+    font-weight: 600;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    transition: all .2s cubic-bezier(.4,0,.2,1) 0s;
+    cursor: pointer;
+}
+
+.spotlight-newsletter #spotlight-widget-newsletter .field-wrapper input:focus{
+    border-bottom: 2px solid #d8dae0;
+}
+.spotlight-newsletter #spotlight-widget-newsletter .field-wrapper input:focus + label,
+.spotlight-newsletter #spotlight-widget-newsletter .field-wrapper input:not(:placeholder-shown) + label{
+    font-size: 14px;
+    top: -25px;
+}
+
+.spotlight-newsletter #spotlight-widget-newsletter .field-wrapper input:valid ~ .verification-seal{
+    display: block;
+}
+
+.spotlight-newsletter #spotlight-widget-newsletter .field-wrapper input:valid{
+    border-bottom: 2px solid #f5f5f5;
+}
+
+.verification-seal{
+    display: none;
+    position: absolute;
+    right: 5px;
+    top: -5px;
+}
+
+.spotlight-card-confirmation-wrapper{
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 48px;
+}
+
+.spotlight-card-confirmation-wrapper input{
+    position: absolute;
+    border: transparent;
+    height: 48px;
+    width: 100%;
+    background-color: #111111;
+    color: #F5F5F5;
+    border-radius: 25px;
+    text-align: center;
+    padding: 13px 45px 13px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: -0.02em;
+}
+
+.spotlight-card-confirmation-wrapper input:disabled{
+    background-color: rgba(17, 17, 17, 0.3);
+    color: #F5F5F5;
+    cursor: default;
+}
+
+.spotlight-card-confirmation-wrapper svg{
+    position: absolute;
+    width: 16px;
+    height: 13px;
+    margin-top: 17.5px;
+    box-sizing: border-box;
+    margin-left: calc(50% + 37px);
+}
+
+@media (min-width: 704px) and (max-width: 1199px){
+    .spotlight-newsletter {
+        display: flex;
+        justify-content: space-between;
+        padding: 48px 48px;
+    }
+    .spotlight-newsletter .spotlight-newsletter-title {
+        font-size: 32px;
+        line-height: 116%;        
+        font-weight: 600;
+        margin: 0 100px 66px 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .spotlight-newsletter {
+        display: flex;
+        justify-content: space-between;
+        padding: 46px 56px 106px;
+    }
+    .spotlight-newsletter #spotlight-widget-newsletter .field-wrapper {
+        margin-left: -8%;
+    }
+    .spotlight-newsletter #spotlight-widget-newsletter .field-wrapper p {
+        font-size: 12px;
+        line-height: 112%;
+        margin-top: 22px;
+    }    
+    .spotlight-newsletter #spotlight-widget-newsletter {
+        display: flex;
+        margin-top: 24px;
+    }
+    .spotlight-card-confirmation-wrapper{
+        margin-bottom: 48px;
+        min-width: 148px;
+        margin-left: 10%;
+    }
+    .spotlight-newsletter .spotlight-newsletter-title {
+        font-size: 48px;
+        line-height: 116%;
+        font-weight: 600;
+        margin: 9px 81px 0 0;
+    }
+    .spotlight-card-confirmation-wrapper input{
+        margin-top: -24px;
+    }
+    .spotlight-card-confirmation-wrapper svg{
+        margin-top: -7.5px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .spotlight-newsletter {
+        justify-content: space-between;
+    }
+    .spotlight-newsletter #spotlight-widget-newsletter .field-wrapper {
+        margin-left: -5%;
+    }
+    .spotlight-newsletter #spotlight-widget-newsletter .field-wrapper p {
+       font-size: 14px;
+       line-height: 114%;
+       margin-top: 28px;
+    }
+    .spotlight-newsletter #spotlight-widget-newsletter {
+        display: flex;
+        margin-top: 24px;
+        margin-right: 100px;
+    }
+    .spotlight-card-confirmation-wrapper{
+        margin-left: 20%;
+    }
+    .spotlight-newsletter #spotlight-widget-newsletter .field-wrapper input{
+        width: 110%;      
+    }
+    .verification-seal {
+        right: -47px;
+    }
+}
+
+#main-widget-anchor {
+    position: relative;
+    top: -56px;
+}
