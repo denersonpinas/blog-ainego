@@ -10,10 +10,10 @@
         <section id="section-menu">
             <div class="nav-top">
                 <div class="tempo-clima">
-                    <span> 
+                    <span class="tempo-clima__item"> 
                         <img src="<?= get_template_directory_uri()?>/assets/image/wb_twilight.svg" alt="icone clima solarado"> 34°c, Ensolarado
                     </span>
-                    <span>
+                    <span class="tempo-clima__item">
                         <img src="<?= get_template_directory_uri()?>/assets/image/schedule.svg" alt="icone clima solarado"> Ter, 18th Set, 2022
                     </span>
                 </div>
@@ -37,14 +37,15 @@
                         <li class="menu-item">HOME</li>
                     </a>
                     <li class="menu-item">CATEGORIA</li>
-                    <ul style="display: none;">
-                        <li>FOFOCA</li>
-                        <li>TOP NEWS</li>
-                        <li>RECENTES</li>
+                    <ul class="sub-menu">
+                        <li class="sub-item">FOFOCA</li>
+                        <li class="sub-item">TOP NEWS</li>
+                        <li class="sub-item">RECENTES</li>
                     </ul>
                     <li class="menu-item">SOBRE</li>
                     <li class="menu-item">CONTATO</li>
                 </ul>
+                <img class="lupa" src="<?= get_template_directory_uri()?>/assets/image/search.svg" alt="Lupa de pesquisa">
             </div>
             <hr class="borda-menu">
         </section>
