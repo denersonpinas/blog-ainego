@@ -2,6 +2,7 @@
 
 function ainego_setup() { 
 	add_theme_support( 'post-thumbnails' );
+	set_post_thumbnail_size(1280, 720, true);
 
     
 	add_theme_support('amp', array(	'comments_live_list' => true));

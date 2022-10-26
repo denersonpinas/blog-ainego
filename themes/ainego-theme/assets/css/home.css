@@ -1,0 +1,249 @@
+/* SECTION NOTICIA */
+#section-noticia {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+.noticia-title {
+    width: 100%;
+    padding-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.title-all-post {
+    font-size: var(--sub-title);
+    color: var(--vermelho-escuro);
+}
+
+.noticia-title img  {
+    width: 9rem;
+    height: 1.2rem;
+}
+
+.section-posts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4.5rem;
+}
+
+.all-posts {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.post {
+    height: 25.6875rem;
+    width: 20.4375rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.capa-post {
+    width: 20.4375rem;
+    height: 15.625rem;
+}
+
+.title-post {
+    width: 20.4375rem;
+    font-size: var(--sub-title);
+    color: var(--cinza-escuro);
+}
+
+hr.bar-post {
+    width: 30%;
+    height: .1875rem;
+    background-color: var(--amarelo);
+}
+
+.author, .data-post {
+    width: 20.4375rem;
+    font-size: var(--button);
+    color: var(--cinza-escuro);    
+}
+
+.aside-posts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4.25rem;
+}
+
+.newslatter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+    padding: 1.5rem 1rem;
+    border-radius: .8rem;
+    background-color: var(--cinza-escuro);
+    box-sizing: border-box;
+}
+
+.title-newslatter {
+    text-align: center;
+    font-size: var(--body1);
+    color: var(--branco);
+}
+
+.paragrafo-newslatter {
+    font-size: var(--sub-title);
+    text-align: center;
+    color: var(--branco);
+    line-height: 1.25rem;
+}
+
+.form-newslatter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.label-newslatter {
+    font-size: var(--button);
+    color: var(--branco);
+}
+
+.label-newslatter:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.input-newslatter {
+    height: 3.125rem;
+    padding: .9rem 1.25rem;
+    border-radius: .25rem;
+    background-color: var(--branco);
+}
+
+.input-newslatter::placeholder {
+    font-size: var(--sub-title);
+    color: #BABDCC;
+}
+
+.btn-newslatter {
+    height: 3.125rem;
+    border-radius: .25rem;
+    background-color: var(--amarelo);
+
+    text-align: center;
+    color: var(--branco);
+    font-size: var(--sub-title);
+}
+
+.top-news {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.title-categoria-aside {
+    width: 5.75rem;
+    height: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .25rem;
+    box-sizing: border-box;
+    background-color: var(--amarelo);
+
+    font-size: var(--sub-title);
+    color: var(--branco);
+}
+
+.post-top-news {
+    width: 100%;
+    display: flex;
+    gap: .7rem;
+}
+
+.post-top-news img {
+    width: 6.25rem;
+    height: 6.25rem;
+}
+
+.content-top-news {
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.3rem;
+}
+
+.title-post, .data-post {
+    width: 12rem;
+    font-size: var(--button);
+    line-height: 1.2rem;
+}
+
+.anuncio {
+    width: 20.5625rem;
+    padding-bottom: 4rem;
+}
+
+.anuncio img {
+    width: 100%;    
+}
+
+@media(min-width:768px) {
+    .title-all-post {
+        font-size: var(--body1);
+    }
+    
+    .noticia-title img  {
+        width: 29rem;
+        height: 3rem;
+    }
+    
+    .all-posts {
+        justify-content: space-between;
+    }
+}
+
+@media(min-width:1200px) {
+    .section-posts {
+        flex-direction: row;
+    }
+    
+    .noticia-title {
+        padding-bottom: 3rem;
+        gap: 2.5rem;
+    }
+    
+    .title-all-post {
+        font-size: var(--h1);
+    }
+    
+    .noticia-title img {
+        width: 50%;
+        height: 3.75rem;
+    }
+    
+    .all-posts {
+        width: 70%;
+    }
+    
+    .aside-posts {
+        width: 30%;
+    }
+
+    .anuncio {
+        align-self: flex-start;
+    }
+}
