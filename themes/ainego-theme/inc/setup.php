@@ -4,14 +4,15 @@ function ainego_scripts() {
     $directory = get_template_directory_uri()."\/assets\/";
     // $directory_dev = get_template_directory_uri()."\/css-dev\/";
 
-    // wp_enqueue_style( 'header-css', $directory . 'header.css');
-    // wp_enqueue_style( 'footer-css', $directory . 'footer.css');
+    wp_enqueue_style( 'header-css', $directory . 'css\/header.css');
+    wp_enqueue_style( 'footer-css', $directory . 'css\/footer.css');
     wp_enqueue_style( 'vars-css', $directory . 'css\/vars.css');
 
+    wp_enqueue_style( 'header-js', $directory . 'js\/header.js');
+    wp_enqueue_style( 'footer-js', $directory . 'js\/footer.js');
+    
     if(is_page_template('template/home.php')){
-        wp_enqueue_style( 'home-css', $directory . 'css\/header.css');
-        wp_enqueue_script('home-js', $directory . 'js\/home.js', array(), '1.0.0');
-
+        wp_enqueue_style( 'home-css', $directory . 'css\/home.css');
     }
 }
    
