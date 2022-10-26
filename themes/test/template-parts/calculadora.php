@@ -18,7 +18,7 @@
     <link rel="preload" href="<?= get_template_directory_uri() ?>/assets/fonts/Graphik-Medium.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="<?= get_template_directory_uri() ?>/assets/fonts/Graphik-Regular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="<?= get_template_directory_uri() ?>/assets/fonts/NotoSerif-Regular.woff2" as="font" crossorigin="anonymous">
-
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <?php wp_head(); ?>
 </head>
 <body>
@@ -27,7 +27,7 @@
             <div id="calculadora-dividas" class="carousel">
                 <div class="calc-hero">
                     <h2>Calculadora<br /><span> <span>de</span> <span>Dívidas</span></span></h2>
-                    <img data-lazy="<?= get_template_directory_uri() ?>/assets/images/calculadora-dividas/CAPA-CALCULADORA-1_semmargem.gif" alt="">
+                    <img data-lazy="<?= get_template_directory_uri() ?>/assets/image/calculadora-dividas/CAPA-CALCULADORA-1_semmargem.gif" alt="">
                     <div class="start-here">
                         <p>Comece aqui</p>
                         <button id="next-hero" class="next-hero" aria-label="Next" type="button" style="" aria-disabled="false">
@@ -65,7 +65,7 @@
                 </div>
 
                 <div id="second-slide" data-vars-index="2" class="block">
-                    <img class="img-slide2" alt="renda mesal" data-lazy="<?= get_template_directory_uri() ?>/images/calculadora-dividas/CALCULADORA-INTERNO-1.gif">
+                    <img class="img-slide2" alt="renda mesal" data-lazy="<?= get_template_directory_uri() ?>/assets/image/calculadora-dividas/CALCULADORA-INTERNO-1.gif">
                     <div class="title-container2">
                         <h1>Qual é a sua renda mensal atual em média?</h1>
                         <p>Some todos os valores que você recebe por mês, em média. Pode ser um valor aproximado caso não saiba.</p>
@@ -83,7 +83,7 @@
                 </div>
 
                 <div id="fourth-slide" data-vars-index="4" class="block">
-                    <img class="img-slide4" alt="renda mesal" data-lazy="<?= get_template_directory_uri() ?>/images/calculadora-dividas/CALCULADORA-INTERNO-3.gif">
+                    <img class="img-slide4" alt="renda mesal" data-lazy="<?= get_template_directory_uri() ?>/assets/image/calculadora-dividas/CALCULADORA-INTERNO-3.gif">
                     <div class="title-container2">
                         <h1>Quantas dívidas você tem em atraso hoje? </h1>
                         <input class="text-box-calc" id="dividas-atraso" type="text" placeholder="digite aqui (ex: 12)" onfocus="this.placeholder = ''" onblur="this.placeholder = 'digite aqui (ex: 12)'">
@@ -91,7 +91,7 @@
                 </div>
 
                 <div id="fifth-slide" data-vars-index="5" class="block">
-                    <img class="img-slide5" alt="renda mesal" data-lazy="<?= get_template_directory_uri() ?>/images/calculadora-dividas/CALCULADORA-INTERNO-4.gif">
+                    <img class="img-slide5" alt="renda mesal" data-lazy="<?= get_template_directory_uri() ?>/assets/image/calculadora-dividas/CALCULADORA-INTERNO-4.gif">
                     <div class="title-container2">
                         <h1>Qual o valor total estimado das suas dívidas?</h1>
                         <p>Estamos perguntando pois queremos te ajudar a economizar dinheiro e a negociar as suas dívidas.</p>
@@ -100,7 +100,7 @@
                 </div>
 
                 <div id="sixth-slide" data-vars-index="6" class="block">
-                    <img class="img-slide5" alt="renda mesal" data-lazy="<?= get_template_directory_uri() ?>/images/calculadora-dividas/CALCULADORA-INTERNO-5_semmargem.gif">
+                    <img class="img-slide5" alt="renda mesal" data-lazy="<?= get_template_directory_uri() ?>/assets/image/calculadora-dividas/CALCULADORA-INTERNO-5_semmargem.gif">
                     <div class="title-container2">
                         <h1>Quanto você poderia separar todos os meses para pagar as suas dívidas?</h1>
                         <input class="text-box-calc" id="pagar-dividas" type="text" placeholder="digite aqui (ex: 1050)" onfocus="this.placeholder = ''" onblur="this.placeholder = 'digite aqui (ex: 1050)'">
